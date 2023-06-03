@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Dancing+Script:wght@400;600&family=Kalam:wght@700&family=Kanit&family=Kaushan+Script&family=Merriweather&family=Montserrat:wght@400;500&family=Poor+Story&family=Poppins:wght@400;700&family=Roboto&family=Sacramento&family=Sigmar&family=Ubuntu&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: 90vh;
+    background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(photopix/banner1.jpg);
+    background-attachment: fixed;
+}
+
+nav{
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+    font-family: 'Poppins', sans-serif;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.logo{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.logo span{
+    color: #e74c3c;
+}
+
+.menu a{
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu a:first-child{
+    color: #e74c3c;
+}
+
+.menu a:hover{
+    color: #e74c3c;
+}
+
+.icon i{
+    font-size: 22px;
+    transition: all 0.3s ease-in-out;
+}
+
+.icon i:hover{
+    color: #e74c3c;
+}
+
+.icon a{
+    text-decoration: none;
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 11px;
+    margin-left: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+.h-text{
+    color: white;
+    max-width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+
+}
+
+#camera{
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.h-text h1{
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    line-height: 4rem;
+    margin-bottom: 20px;
+}
+
+.h-text input{
+    width: 60%;
+    padding: 20px;
+    border: none;
+    outline: none;
+    border-radius: 11px;
+    font-size: 20px;
+    height: 45px;
+}
+
+.h-text button{
+    width: 30%;
+    /* padding: 20px; */
+    background-color: #e74c3c;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 11px;
+    font-size: 20px;
+    height: 45px;
+}
+
+.filter-gallery{
+    padding: 100px;
+    
+}
+
+.portfolio-menu{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.portfolio-menu ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px 0px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.5s ease;
+    text-align: center;
+}
+
+.portfolio-menu ul li:hover{
+    color: white;
+    background-color: #e74c3c;
+    border-radius: 11px;
+}
+
+li.active{
+    color: white;
+    background-color: #e74c3c;
+    border-radius: 11px;
+}
+
+.portfolio-item{
+    width: 100%;
+  
+ 
+   
+}
+
+.portfolio-item .item{
+width: 360px;
+height: 360px;
+
+float: left;
+margin-bottom: 20px;
+margin-right: 20px;
+
+}
+
+.portfolio-item .item img{
+    width: 100%;
+    height: 100%;
+    border-radius: 9px;
+}
+
+.container{
+    width: 1150px;
+    text-align: center;
+ 
+   margin: auto;
+}
+
+.member{
+    width: 100%;
+    padding: 10px 100px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.member-info{
+    text-align: center;
+}
+
+.member-info h1{
+    font-size: 2.5rem;
+}
+
+.member-info h1 span{
+    color: #e74c3c;
+}
+
+.member-card{
+    text-align: center;
+    padding: 50px;
+    width: 75%;
+    margin: auto;
+}
+
+.member-card p{
+    margin: 20px 0px;
+    line-height: 2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.member-card h2{
+    margin: 15px 0;
+}
+
+.m-images {
+    width: 100%;
+    display: flex;
+    margin: 20px 0px;
+    overflow: hidden;
+  justify-content: center;
+  align-items: center   ;
+}
+
+.m-images img{
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.m-images img:hover{
+    transform: scale(1.2);
+}
+
+footer{
+    width: 100%;
+    /* height: 100vh; */
+    background-color: #262626;
+    padding: 50px 100px;
+}
+
+.newsletter{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    border: 1px solid rgba(255,255,255,0.2);
+    color: white;
+}
+
+.newsletter >div{
+    flex-basis: 50%;
+}
+
+.ntext{
+   text-align: right;
+}
+
+.newsletter h2{
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.newsletter p{
+    font-family: 'Montserrat', sans-serif;
+    
+    margin: 10px 0;
+}
+
+.newsletter label{
+    position: relative;
+}
+
+.newsletter input{
+    padding: 15px ;
+    width: 70%;
+    border-radius: 9px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.newsletter button{
+    padding: 17px ;
+    border-radius: 9px;
+    font-size: 1rem;
+  background-color: #e74c3c;
+  border: 1px solid rgba(255,255,255,0.2);
+  outline: none;
+  color: white;
+}
+
+.f-contact{
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+
+    margin-top: 3rem;
+
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.f-contact h1{
+    font-family: 'Poppins', sans-serif;
+}
+
+.f-contact p{
+    font-family: 'Montserrat', sans-serif;
+    /* font-size: 13px; */
+    line-height: 2rem;
+    color: grey;
+    cursor: pointer;
+    
+}
+
+.f-contact >div{
+    flex-basis: 23%;
+}
+
+.f-contact p:hover{
+    color: white;
+}
+
+.f-contact i{
+    background-color: #fff;
+    color: black;
+    padding: 10px;
+    font-size: 18px;
+    margin: 20px 5px;
+    border-radius: 50%;
+    transition: 0.4s ease;
+}
+
+.f-contact i:hover{
+    background: transparent;
+    color: white;
+
+
+    outline: 2px solid white;
+outline-offset: 10px;
+}
